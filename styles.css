@@ -1,125 +1,174 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Tulpen+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kite+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Kite+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Tulpen+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kite+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Kite+One&display=swap");
 
 body {
-    background: #CEC6C5;
-    background: -moz-radial-gradient(center, #CEC6C5 0%, #9EA0A4 47%, #C5C2C3 100%);
-    background: -webkit-radial-gradient(center, #CEC6C5 0%, #9EA0A4 47%, #C5C2C3 100%);
-    background: radial-gradient(ellipse at center, #CEC6C5 0%, #9EA0A4 47%, #C5C2C3 100%);
-    font-family: fantasy;
-    text-align: center;
-    margin-bottom: 60px;
-    }
+  background: #cec6c5;
+  background: -moz-radial-gradient(
+    center,
+    #cec6c5 0%,
+    #9ea0a4 47%,
+    #c5c2c3 100%
+  );
+  background: -webkit-radial-gradient(
+    center,
+    #cec6c5 0%,
+    #9ea0a4 47%,
+    #c5c2c3 100%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    #cec6c5 0%,
+    #9ea0a4 47%,
+    #c5c2c3 100%
+  );
+  font-family: fantasy;
+  text-align: center;
+  margin-bottom: 60px;
+}
 
-#title {color: black; 
-    border: 5px solid black;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-family: 'Rubik Iso', cursive;
-    display: flex;
-    justify-content: center;
-    }
+#title {
+  color: black;
+  border: 5px solid black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Rubik Iso", cursive;
+  display: flex;
+  justify-content: center;
+}
 
-h1 {color: black;
-text-decoration: underline;}
+h1 {
+  color: black;
+  text-decoration: underline;
+}
 
-h2 {color: rgb(70, 69, 69);}
+h2 {
+  color: rgb(70, 69, 69);
+}
 
-p {color: rgb(79, 77, 77);}
+p {
+  color: rgb(79, 77, 77);
+}
 
-#list {color: rgb(79, 77, 77);}
+#list {
+  color: rgb(79, 77, 77);
+}
 
 #face {
-    display: flex;
-    justify-content: center;
-    }
+  display: flex;
+  justify-content: center;
+}
 
-#face2 {border: 5px solid black;}
+#face2 {
+  border: 5px solid black;
+}
 
-nav a {color: black;
-    border: 1px solid black;
-    padding: 5px;
-    }
-
+nav a {
+  color: black;
+  border: 1px solid black;
+  padding: 5px;
+}
 
 /* Website created by */
-.brandsig {display: flex;}
-
-.brandsig-content-center{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    position: fixed;
-    bottom: 0%;
-    left: 0%;
-    width: 100%;
-    height: 60px;
-    background: #464545
+.brandsig {
+  display: flex;
 }
 
-.logo p {color: #b1ff2e;}
-
-.brand p {font-family: 'Gruppo', sans-serif;
-    color: #b1ff2e;
-    font-size: large;
-    align-self: center;
-    margin-bottom: 20px;
+.brandsig-content-center {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 60px;
+  background: #464545;
 }
 
+.logo p {
+  color: #b1ff2e;
+}
 
-.sig p {color: white; padding-right: 7px;}
+.brand p {
+  font-family: "Gruppo", sans-serif;
+  color: #b1ff2e;
+  font-size: large;
+  align-self: center;
+  margin-bottom: 20px;
+}
 
+.sig p {
+  color: white;
+  padding-right: 7px;
+}
 
 .brandsig-content-right {
-    position: fixed;
-    bottom: 0%;
-    right: 0%;
-    padding-right:10px;
-    padding-top: 5px;
-    margin-top: 10px;
-    float: right;
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  padding-right: 10px;
+  padding-top: 5px;
+  margin-top: 10px;
+  float: right;
 }
 
-.icon-style{
-    height: 30px;
-    margin-left: 20px;
-    margin-top: 0px;
-    margin-bottom: 5px;
-    border: 0px;   
+.icon-style {
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  border: 0px;
 }
 
-.icon-style:hover{
-    background:#b1ff2e;
-    padding: 2px;
+.icon-style:hover {
+  background: #b1ff2e;
+  padding: 2px;
 }
 
-
-@media (max-width: 700px) {body {background: rgb(191, 189, 189);}}
+@media (max-width: 700px) {
+  body {
+    background: rgb(191, 189, 189);
+  }
+}
 
 /* Nav bar */
 .navbar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 15px;
 }
 
 .gameButtons {
-    align-self: center;
-    cursor: pointer;
-    margin: 5px;
+  align-self: center;
+  cursor: pointer;
+  margin: 5px;
 }
 
-.box1footer {background: red;}
-.box2footer {background: orange}
-.box3footer {background: yellow}
-.box4footer {background: green}
-.box5footer {background: blue}
-.box6footer {background: violet}
+.box1footer {
+  background: red;
+}
+.box2footer {
+  background: orange;
+}
+.box3footer {
+  background: yellow;
+}
+.box4footer {
+  background: green;
+}
+.box5footer {
+  background: blue;
+}
+.box6footer {
+  background: violet;
+}
 
-.box {border: 1px solid black}
+.box {
+  border: 1px solid black;
+}

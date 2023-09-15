@@ -1,35 +1,37 @@
-document.addEventListener("keydown", play =>{
-  let playSound = document.querySelector(`audio[data-keyCode="${play.keyCode}"]`);
+document.addEventListener("keydown", (play) => {
+  let playSound = document.querySelector(
+    `audio[data-keyCode="${play.keyCode}"]`
+  );
   if (playSound != null) {
-      playSound.play()
-  };
-    // if (play.keyCode == 81) {
-    //   document.getElementById("boom").play();
-    // } else if (play.keyCode == 87) {
-    //   document.getElementById("clap").play();
-    // } else if (play.keyCode == 69) {
-    //   document.getElementById("hihat").play();
-    // } else if (play.keyCode == 82) {
-    //   document.getElementById("kick").play();
-    // } else if (play.keyCode == 84) {
-    //   document.getElementById("openhat").play();
-    // } else if (play.keyCode == 89) {
-    //   document.getElementById("ride").play();
-    // } else if (play.keyCode == 85) {
-    //   document.getElementById("snare").play();
-    // } else if (play.keyCode == 73) {
-    //   document.getElementById("tink").play();
-    // } else if (play.keyCode == 79) {
-    //   document.getElementById("tom").play();
-    // }
+    playSound.play();
+  }
+  // if (play.keyCode == 81) {
+  //   document.getElementById("boom").play();
+  // } else if (play.keyCode == 87) {
+  //   document.getElementById("clap").play();
+  // } else if (play.keyCode == 69) {
+  //   document.getElementById("hihat").play();
+  // } else if (play.keyCode == 82) {
+  //   document.getElementById("kick").play();
+  // } else if (play.keyCode == 84) {
+  //   document.getElementById("openhat").play();
+  // } else if (play.keyCode == 89) {
+  //   document.getElementById("ride").play();
+  // } else if (play.keyCode == 85) {
+  //   document.getElementById("snare").play();
+  // } else if (play.keyCode == 73) {
+  //   document.getElementById("tink").play();
+  // } else if (play.keyCode == 79) {
+  //   document.getElementById("tom").play();
+  // }
 });
-document.addEventListener("click", play =>{
+document.addEventListener("click", (play) => {
   let playSound = document.querySelector(
     `audio[data-keyCode="${play.target.dataset.keycode}"]`
   );
-   if (playSound != null){
+  if (playSound != null) {
     playSound.play();
-  };
+  }
 });
 
 // boombutton.addEventListener("click",play => {

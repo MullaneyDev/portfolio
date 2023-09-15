@@ -53,7 +53,7 @@ const diceWindow = document.querySelector(".diceWindow");
 const rollDiceButton = document.querySelector(".rollDiceButton");
 const holdButton = document.querySelector(".holdScoreButton");
 const resetButton = document.querySelector(".reset");
-const gameWindow = document.querySelector(".window")
+const gameWindow = document.querySelector(".window");
 const result = document.getElementById("result");
 const player1Window = document.getElementById("player1");
 const player2Window = document.getElementById("player2");
@@ -151,7 +151,6 @@ holdButton.addEventListener("click", () => {
       score2.innerHTML = heldScore2;
       rollCount2.innerHTML = count2;
       gameWindow.style.opacity = 0.2;
-
     }
   } else {
     heldScore2 += total2;
@@ -179,7 +178,6 @@ holdButton.addEventListener("click", () => {
       score1.innerHTML = heldScore1;
       rollCount1.innerHTML = count1;
       gameWindow.style.opacity = 0.2;
-
     }
   }
 });
