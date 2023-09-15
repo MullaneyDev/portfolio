@@ -23,10 +23,15 @@ body {
     #9ea0a4 47%,
     #c5c2c3 100%
   );
-  font-family: fantasy;
+  font-family: "Gruppo", sans-serif;
   text-align: center;
   margin-bottom: 80px;
   justify-content: center;
+}
+
+body a {
+  color: black;
+  margin: 20px;
 }
 
 #title {
@@ -34,7 +39,7 @@ body {
   border: 5px solid black;
   padding-top: 15px;
   padding-bottom: 15px;
-  font-family: "Rubik Iso", cursive;
+  font-family: "Gruppo", sans-serif;
   display: flex;
   justify-content: center;
 }
@@ -65,11 +70,37 @@ p {
   border: 5px solid black;
 }
 
-nav a {
-  color: black;
-  border: 1px solid black;
-  padding: 5px;
+/* Nav bar */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 }
+
+/* .navBox {
+  background-color: #464545;
+}
+.navBox1 {
+  background: red;
+}
+.navBox2 {
+  background: orange;
+}
+.navBox3 {
+  background: yellow;
+}
+.navBox4 {
+  background: green;
+}
+.navBox5 {
+  background: blue;
+}
+.navBox6 {
+  background: violet;
+} */
+
 
 /* Website created by */
 .brandsig {
@@ -135,16 +166,7 @@ nav a {
   }
 }
 
-/* Nav bar */
-.navbar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  padding: 15px;
-}
-
+/* JSDOM buttons */
 .gameButtons {
   display: flex;
   flex-wrap: wrap;
@@ -159,27 +181,9 @@ nav a {
 
 .gameButtonsIndividual {
   justify-self: center;
-  width: 100px;
-  background-color:cadetblue;
+  background-color: cadetblue;
   height: 50px;
-}
-.box1footer {
-  background: red;
-}
-.box2footer {
-  background: orange;
-}
-.box3footer {
-  background: yellow;
-}
-.box4footer {
-  background: green;
-}
-.box5footer {
-  background: blue;
-}
-.box6footer {
-  background: violet;
+  width: 210px;
 }
 
 .box {
