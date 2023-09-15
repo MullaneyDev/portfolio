@@ -2,38 +2,46 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color:darkslategrey;
 }
-.input {
-  display: none;
-}
-.gridContainer {
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 30px 30px;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
+
+.drumKit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: center;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 70px;
   gap: 10px;
-  background-color: yellowgreen;
+  background-color: black;
   padding: 10px;
 }
 
-.gridContainer > div {
+.drumKit > div {
+  display: flex;
+  flex-direction: column;
   background-color: white;
-  padding-top: 5px;
+  min-width: 70px;
   padding-right: 5px;
   padding-left: 5px;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
+  padding-bottom: 5px;
 }
 
+.drum {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
 .homeButton {
   align-self: center;
   justify-self: baseline;
   cursor: pointer;
   background-color: #9ea0a4;
   margin: 20px;
+  margin-bottom: 80px;
+}
+#drumImg {
+  display: flex;
+  width: 50%;
 }
 .homeButton:hover {
   background-color: darkgreen;
@@ -94,10 +102,4 @@ body {
 .icon-style:hover {
   background: #b1ff2e;
   padding: 2px;
-}
-
-@media (max-width: 500px) {
-  .input {
-    display: block;
-  }
 }

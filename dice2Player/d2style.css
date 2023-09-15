@@ -2,7 +2,23 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  background: linear-gradient(
+    to right,
+    cadetblue 0%,
+    cadetblue 50%,
+    wheat 50%,
+    wheat 100%
+  );
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
   background-color: antiquewhite;
+  border: 2px solid black;
+  width: 600px;
+  margin: 10px;
 }
 
 .gameWindow {
@@ -10,7 +26,27 @@ body {
   flex-direction: column;
   align-self: center;
   border: 5px solid black;
-  background-color: white;
+  background-color: antiquewhite;
+}
+
+#player1 {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: space-between;
+}
+
+#player2 {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.window {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .diceWindow {
@@ -37,30 +73,59 @@ body {
     translateY(calc(var(--top) * -1));
 }
 
-.scoreWindow {
+.scoreWindow1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   background-color: greenyellow;
   border: 2px solid green;
+  width: 400px;
 }
+
+.scoreWindow2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: greenyellow;
+  border: 2px solid green;
+  width: 400px;
+}
+
 .rollDiceButton {
   margin: 10px;
   cursor: pointer;
+  width: 150px;
+  height: 50px;
 }
+
 .rollDiceButton:hover {
-  background-color: greenyellow;
+  background-color: lightgreen;
+}
+
+.holdScoreButton {
+  margin: 10px;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+}
+
+.holdScoreButton:hover {
+  background-color: lightcoral;
 }
 
 .reset {
-  margin: 10px;
   align-self: center;
+  margin: 10px;
   cursor: pointer;
+  width: 150px;
+  height: 50px;
+  background-color: coral;
 }
 
 .reset:hover {
-  background-color: firebrick;
+  background-color: crimson;
 }
 
 .homeButton {
@@ -69,6 +134,7 @@ body {
   cursor: pointer;
   background-color: #9ea0a4;
   margin: 20px;
+  margin-bottom: 80px;
 }
 .homeButton:hover {
   background-color: darkgreen;
