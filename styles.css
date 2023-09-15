@@ -26,6 +26,7 @@ body {
   font-family: fantasy;
   text-align: center;
   margin-bottom: 80px;
+  justify-content: center;
 }
 
 #title {
@@ -145,11 +146,23 @@ nav a {
 }
 
 .gameButtons {
-  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
   cursor: pointer;
-  margin: 5px;
+  padding: 15px;
+  margin: 25px;
 }
 
+.gameButtonsIndividual {
+  justify-self: center;
+  width: 100px;
+  background-color:cadetblue;
+  height: 50px;
+}
 .box1footer {
   background: red;
 }
