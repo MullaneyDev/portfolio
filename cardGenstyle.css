@@ -1,0 +1,144 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+#cardDisplay {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid;
+    align-items: center;
+    justify-content: space-around;
+    width: 230px;
+    height: 170px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.card {  
+  position: relative;
+  width: 105px;
+  height: 150px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+}
+/* sets the card display */
+.card1 {  
+  position: relative;
+  width: 105px;
+  height: 150px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+}
+.card-value-suit {
+  display: inline-block;
+  position: absolute;
+}
+
+.card-value-suit.top {
+  top: 5px;
+  left: 5px;
+}
+/* displays the value at the top */
+.card-value-suit.bot {
+  transform: rotate(180deg);
+  bottom: 5px;
+  right: 5px
+}
+/* displays the value at the bottom */
+.card-suit {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25%;
+}
+/* displays the suit in the middle */
+.card.spades,
+.card.clubs {
+  color: black;
+}
+/* sets the colour for the black cards */
+.card.hearts,
+.card.diamonds {
+  color: red;
+}
+/* sets the colour for the red cards */
+
+#generateCards:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+.homeButton {
+    align-self: center;
+    justify-self: baseline;
+    cursor: pointer;
+    background-color: #9EA0A4;
+    margin: 20px;
+}
+.homeButton:hover {
+  background-color: darkgreen;
+}
+
+.brandsig {display: flex;}
+
+.brandsig-content-center{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 60px;
+    background: #464545
+}
+
+.logo p {color: #b1ff2e;}
+
+.brand p {font-family: 'Gruppo', sans-serif;
+    color: #b1ff2e;
+    font-size: large;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+
+.sig p {color: white; padding-right: 7px;}
+
+
+.brandsig-content-right {
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    padding-right:10px;
+    padding-top: 5px;
+    margin-top: 10px;
+    float: right;
+}
+
+.icon-style{
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    border: 0px;   
+}
+
+.icon-style:hover{
+    background:#b1ff2e;
+    padding: 2px;
+}
