@@ -8,6 +8,9 @@ const d12Button = document.getElementById("d12");
 const d20Button = document.getElementById("d20");
 const diceValue = document.getElementById("diceValue");
 const placeholder = document.getElementById("placeholder");
+const diceAmount = document.getElementById("diceAmount");
+const rolledDice = document.getElementById("rolledDice");
+
 rollButton.disabled = true;
 
 const dice = {
@@ -18,15 +21,35 @@ const dice = {
   },
 };
 
-//Prints dice roll to the page
+const rolledString = (rolls, total) => {
+  let stringLog = "";
+  let stringLog2 = "";
+  let stringFinished = "";
+  for (let i = 0; i < rolls.length; i++) {
+    stringLog += rolls[i] + " + ";
+    stringLog2 = stringLog.substring(0, stringLog.length - 2);
+    stringFinished = stringLog2 + " = " + total;
+  }
+  return stringFinished;
+};
 
 const printNumber = (number) => {
   placeholder.innerHTML = number;
 };
+const printRolledDice = (rolls, total) => {
+  rolledDice.innerHTML = rolledString(rolls, total);
+};
 
 rollButton.onclick = () => {
-  let result = dice.roll();
-  printNumber(result);
+  let total = 0;
+  let rolls = [];
+  for (let amount = 0; amount < diceAmount.value; amount++) {
+    let thisRoll = dice.roll();
+    rolls.push(thisRoll);
+    total += thisRoll;
+  }
+  printNumber(total);
+  printRolledDice(rolls, total);
 };
 
 d4Button.onclick = () => {
